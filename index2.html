@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Le titre qui apparaitra dans le navigateur</title>
+    <meta charset="UTF-8">
+    <style>
+        /* Définition des couleurs */
+        :root {
+            --bleu-fonce-classique: #0A1828; /* Bleu foncé classique */
+            --turquoise: #178582;           /* Turquoise */
+            --or: #BFA181;                  /* Or */
+            --rose-clair: #FFF0F5;          /* Rose clair */
+            --rose-fonce: #FFB6C1;          /* Rose foncé pour le survol */
+        }
+
+        /* Style global de la page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bleu-fonce-classique); /* Fond bleu foncé classique pour la page entière */
+            color: var(--turquoise); /* Texte en turquoise */
+        }
+
+        /* Style pour les titres */
+        h1, h2 {
+            color: var(--or); /* Titres en Or */
+        }
+
+        /* Style pour la bannière en bas de la page */
+        #footer-banner {
+            background-color: var(--bleu-fonce-classique); /* Fond bleu foncé classique */
+            color: var(--or); /* Texte en Or */
+            text-align: center; /* Centrer le texte */
+            padding: 10px; /* Espacement interne */
+            position: fixed; /* Fixe la bannière en bas */
+            bottom: 0; /* Positionne la bannière en bas */
+            width: 100%; /* Largeur complète */
+            font-size: 18px; /* Taille de la police */
+        }
+
+        /* Style pour la disposition des rectangles */
+        .rectangle-container {
+            display: flex; /* Utilisation du flexbox pour organiser les rectangles */
+            flex-wrap: wrap; /* Permet de passer à la ligne suivante si nécessaire */
+            justify-content: space-between; /* Espacement égal entre les rectangles */
+            gap: 20px; /* Espacement entre les rectangles */
+            margin-top: 20px; /* Marge au-dessus des rectangles */
+            padding: 0 20px;
+        }
+
+        /* Style pour chaque rectangle */
+        .rectangle {
+            width: 48%; /* Chaque rectangle prend environ la moitié de la largeur */
+            height: 200px; /* Hauteur des rectangles */
+            display: flex; /* Flexbox pour centrer le texte */
+            justify-content: center; /* Centrer horizontalement */
+            align-items: center; /* Centrer verticalement */
+            font-family: Arial, sans-serif; /* Police du texte */
+            font-size: 20px; /* Taille du texte */
+            color: var(--turquoise); /* Texte en turquoise */
+            background-color: var(--rose-clair); /* Fond rose clair */
+            margin-bottom: 20px; /* Marge en bas pour espacer les rectangles */
+            border-radius: 15px; /* Coins arrondis */
+            text-align: center; /* Centrage du texte */
+            transition: background-color 0.3s ease; /* Animation de transition pour le changement de couleur */
+        }
+
+        /* Effet de survol sur les rectangles */
+        .rectangle:hover {
+            background-color: var(--rose-fonce); /* Change la couleur de fond en rose foncé au survol */
+            cursor: pointer; /* Change le curseur en pointeur pour indiquer que c'est interactif */
+        }
+
+        /* Style pour l'image en dehors des rectangles */
+        .image-container {
+            display: flex;
+            justify-content: flex-end; /* Positionner l'image à droite */
+            margin-top: 20px; /* Espacement au-dessus de l'image */
+        }
+
+        .image-container img {
+            width: 80%; /* Redimensionner l'image pour qu'elle soit plus large */
+            height: auto; /* Hauteur ajustée automatiquement pour garder les proportions */
+            border-radius: 15px; /* Coins arrondis de l'image */
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Data Analyste & Ergonome -</h1>
+    <p>"Les sanglots longs
+Des violons de l'automne
+Blessent mon cœur
+D'une langueur monotone."</p>
+    <h2>CHANSON  D'AUTOMNE</h2>
+    <p>Sempre libera degg'io folleggiare
+De gioia in gioia,
+Il leggiadro viso, in sua beltà,
+Al piacere." 
+
+"Voglio vivere così,
+Che al core,
+Che al core mi frasi.</p>
+
+    <!-- Conteneur des rectangles -->
+    <div class="rectangle-container">
+        <!-- Premier rectangle -->
+        <div class="rectangle"> La Logique est-elle Universelle ?</div>
+        
+        <!-- Deuxième rectangle -->
+        <div class="rectangle">Quelle question est la plus délicate à poser ?</div>
+        
+        <!-- Troisième rectangle -->
+        <div class="rectangle">Vivaldi a-t-il connu Bartoloméo Cristofori ?</div>
+        
+        <!-- Quatrième rectangle -->
+        <div class="rectangle">Qui est Diane Dufresne ?</div>
+        
+    </div>
+
+    <!-- Conteneur pour l'image -->
+    <div class="image-container">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH8TnyeJZrixUWJW0OUwyMoaA-j2REXF8pyNBPQqCfcdPsd89Cu48zhk0OAyplss8oJhPk7RiQQJspRGbL2St8nUer7BWk0ciw5qrSwuNS6XPen1uwTrZoIMU9CFePqtjuXnrVw_x3HlY/s1600/dd-marquise2.jpg" alt="Image de Marquise" />
+    </div>
+
+    <!-- Bannière en bas de la page -->
+    <div id="footer-banner">
+        Daniel D  - Décembre 2024 - Copyright xxxx
+    </div>
+</body>
+</html>
